@@ -469,6 +469,45 @@ margin-left: 5vw;
 	margin-bottom: 20px;
 }
 
+.m{
+	display: block;
+	width:20rem;
+	height: 4rem;
+	/*border: 1px solid #ddd;*/
+	background: #fff;
+	margin: auto;
+	margin-bottom: 5rem;
+	transition: 0.3s;
+}
+.more{
+	font-weight: 500;
+	color: #000;
+	font-size: 1.2rem;
+	line-height: 4rem;
+	transition: 0.2s;
+}
+.more:after{
+	content: "";
+	display: block;
+	width:0rem;
+	height: 4rem;
+	background: #000;
+	margin-top: -4rem;
+    transition: 0.3s ease;
+
+}
+.m:hover{
+	box-shadow: 0 6px 10px #ccc;
+	/*border: 1px solid #000;*/
+}
+.m:hover :after{
+	width: 20rem;
+}
+.m:hover .more{
+	color: #fff;
+}
+
+
 /*ct_2结束*/
 /*ctnn开始*/
 .ctnn{
